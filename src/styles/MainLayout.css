@@ -1,0 +1,33 @@
+.main-layout-container {
+	display: flex;
+	flex-direction: column; /* Empile Header, layout-body, Footer verticalement */
+	min-height: 100vh; /* Hauteur minimale de la fenêtre */
+	background-color: #f9fafb; /* Équivalent de bg-gray-50 */
+ 
+}
+
+/* Conteneur pour la partie centrale (Sidebar + Contenu) */
+.layout-body {
+	display: flex;
+	flex-grow: 1; /* Fait en sorte que cette section prenne toute la hauteur disponible entre Header et Footer */
+	/* padding-top: 4rem; */ /* Décommentez et ajustez si votre Header a une position fixe (équivalent pt-16). 4rem = 64px */
+	/* Si le Header n'est pas fixe, ce padding n'est probablement pas nécessaire */
+	overflow: hidden; /* Empêche le body de déborder si la sidebar ou le main ont des hauteurs fixes, le défilement sera géré à l'intérieur */
+}
+
+/* Zone où le contenu de la page (children) est affiché */
+.main-content-area {
+	flex-grow: 1; /* Prend toute la largeur restante à côté de la Sidebar */
+	padding: 1.5rem; /* Équivalent de p-6 */
+	overflow-y: auto; /* Ajoute un défilement vertical UNIQUEMENT à cette zone si le contenu dépasse */
+}
+
+/* Assurez-vous que les composants Sidebar et Footer ont leurs propres styles */
+/* Par exemple, la Sidebar devrait probablement avoir une largeur fixe définie dans Sidebar.css */
+/* Exemple (devrait être dans Sidebar.css mais pour illustrer): */
+/*
+.sidebar-container { 
+  width: 16rem; 
+  flex-shrink: 0; // Empêche la sidebar de rétrécir 
+} 
+*/

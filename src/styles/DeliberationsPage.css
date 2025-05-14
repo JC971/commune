@@ -1,0 +1,17 @@
+.deliberations-container {
+    /* Vous pouvez ajouter des styles au conteneur principal si nécessaire */
+    padding: 20px; /* Juste un exemple */
+  }
+  
+  .deliberations-title {
+    font-size: 1.5rem; /* Équivalent à text-2xl de Tailwind (peut varier légèrement) */
+    font-weight: 600;  /* Équivalent à font-semibold de Tailwind */
+    margin-bottom: 1rem; /* Équivalent à mb-4 de Tailwind (1rem = 16px par défaut) */
+    color: #333; /* Couleur de texte exemple */
+  }
+  
+  .deliberations-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }

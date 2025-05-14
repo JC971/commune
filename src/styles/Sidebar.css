@@ -1,0 +1,50 @@
+.sidebar-container {
+	width: 16rem; /* Équivalent de w-64 (64 * 0.25rem) */
+	background-color: #f3f4f6; /* Équivalent de bg-gray-100 */
+	padding: 1rem; /* Équivalent de p-4 */
+	border-right: 1px solid #e5e7eb; /* Équivalent de border-r border-gray-200 */
+	display: flex;
+	flex-direction: column;
+	height: 100vh; /* Occupe toute la hauteur de la vue */
+	box-sizing: border-box; /* S'assure que padding et border sont inclus dans width/height */
+}
+
+/* Section de navigation principale */
+.sidebar-nav {
+	flex-grow: 1; /* Permet à la navigation de prendre l'espace vertical restant */
+	overflow-y: auto; /* Ajoute une barre de défilement si le contenu dépasse */
+}
+
+/* Liste des liens */
+.sidebar-list {
+	list-style: none; /* Enlève les puces */
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem; /* Équivalent de space-y-2 pour les éléments flex */
+}
+
+/* Styles pour chaque lien de navigation */
+.sidebar-link {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem; /* Équivalent de p-2 */
+	border-radius: 0.375rem; /* Équivalent approx. de rounded */
+	color: #374151; /* Équivalent de text-gray-700 */
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition douce */
+}
+
+/* Style au survol pour les liens */
+.sidebar-link:hover {
+	background-color: #e5e7eb; /* Équivalent de hover:bg-gray-200 */
+	color: #1f2937; /* Optionnel: assombrir légèrement le texte au survol */
+}
+
+/* Style pour les icônes dans les liens */
+.sidebar-icon {
+	margin-right: 0.75rem; /* Équivalent de mr-3 */
+	flex-shrink: 0; /* Empêche l'icône de rétrécir si le texte est long */
+	/* La taille (h-5 w-5) est gérée par la prop `size={20}` dans le composant React */
+}

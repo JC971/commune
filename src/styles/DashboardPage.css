@@ -1,0 +1,28 @@
+.dashboard-container {
+	padding: 1rem; /* Exemple de padding */
+	/* Ajoutez d'autres styles de conteneur ici */
+    border: solid red 10px; /* Bordure rouge pour le conteneur */
+}
+
+/* Styles pour le titre h1 */
+.dashboard-title {
+	font-size: 1.5rem; /* Équivalent approximatif de text-2xl (24px) */
+	line-height: 2rem; /* Correspondant à la taille de police */
+	font-weight: 600;  /* Équivalent de font-semibold */
+	margin-bottom: 1rem; /* Équivalent de mb-4 (16px) */
+	color: #111827; /* Couleur de texte sombre par défaut (similaire à Tailwind) */
+}
+
+/* Styles pour le message de bienvenue */
+.dashboard-welcome-message {
+	color: #374151; /* Couleur de texte un peu plus claire */
+	/* Ajoutez d'autres styles si nécessaire */
+	margin-bottom: 1rem; /* Espace en dessous */
+}
+
+/* Styles pour les informations utilisateur (si décommenté) */
+.user-info {
+	margin-top: 1rem;
+	font-size: 0.875rem; /* Taille de police plus petite */
+	color: #6b7280; /* Couleur de texte grise */
+}

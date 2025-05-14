@@ -1,0 +1,93 @@
+.app-header {
+	background-color: #1f2937; /* Équivalent de bg-gray-800 */
+	color: #ffffff; /* Équivalent de text-white */
+	padding: 1rem; /* Équivalent de p-4 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); /* Équivalent de shadow-md */
+}
+
+/* Zone du logo */
+.header-logo-area {
+	display: flex;
+	align-items: center;
+}
+
+/* Styles pour le lien du logo */
+.header-logo-link {
+	font-size: 1.25rem; /* Équivalent de text-xl */
+	line-height: 1.75rem;
+	font-weight: 700; /* Équivalent de font-bold */
+	color: inherit; /* Hérite de la couleur du parent (blanc) */
+	text-decoration: none; /* Enlève le soulignement par défaut des liens */
+}
+
+/* Styles pour la navigation principale */
+.header-nav {
+	display: none; /* Caché par défaut (mobile first) - équivalent de 'hidden' */
+	gap: 1rem; /* Espace entre les liens - équivalent de space-x-4 */
+}
+
+/* Styles pour les liens de navigation */
+.header-nav-link {
+	color: inherit; /* Hérite du blanc */
+	text-decoration: none;
+	transition: color 0.2s ease-in-out; /* Ajoute une transition douce au survol */
+}
+
+/* Style au survol pour les liens de navigation */
+.header-nav-link:hover {
+	color: #d1d5db; /* Équivalent de hover:text-gray-300 */
+}
+
+/* Zone des contrôles (boutons utilisateur/menu) */
+.header-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem; /* Ajoute un petit espace entre les boutons */
+}
+
+/* Style de base pour les boutons dans l'en-tête */
+.header-button {
+	background-color: transparent;
+	border: none;
+	color: inherit; /* Hérite du blanc */
+	padding: 0.5rem; /* Équivalent de p-2 */
+	border-radius: 0.25rem; /* Équivalent de rounded */
+	cursor: pointer;
+	display: flex; /* Pour bien aligner l'icône si présente */
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.2s ease-in-out; /* Transition douce */
+}
+
+/* Style au survol pour les boutons */
+.header-button:hover {
+	background-color: #374151; /* Équivalent de hover:bg-gray-700 */
+}
+
+/* Bouton pour ouvrir/fermer le menu mobile (hamburger) */
+.menu-toggle-button {
+	border: solid rgb(135, 130, 130) 1px;
+}
+
+/* Styles pour les écrans moyens et plus grands (breakpoint md de Tailwind ~768px) */
+@media (min-width: 768px) {
+	/* Affiche la navigation principale */
+	.header-nav {
+		display: flex;
+	}
+
+	/* Cache le bouton hamburger */
+	.menu-toggle-button {
+		display: none; /* Équivalent de md:hidden */
+	}
+}
+
+/* Si vous aviez une icône logo spécifique */
+/* .logo-icon {
+	height: 2rem; 
+	width: 2rem; 
+	margin-right: 0.75rem; 
+} */
